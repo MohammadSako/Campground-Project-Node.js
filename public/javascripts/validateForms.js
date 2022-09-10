@@ -1,0 +1,18 @@
+
+// copy this from Bootstrap page => https://getbootstrap.com/docs/5.2/forms/validation/
+(() => {
+    'use strict'
+
+    bsCustomFileInput.init()
+
+    const forms = document.querySelectorAll('.validated-form')
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
