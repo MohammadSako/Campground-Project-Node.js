@@ -3,7 +3,7 @@ mapboxgl.accessToken = mapToken;
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/outdoors-v10', // style URL
         center: campground.geometry.coordinates, // starting position [lng, lat]
-        zoom: 10, // starting zoom
+        zoom: 12, // starting zoom
         projection: 'globe' // display the map as a 3D globe
     });
     map.on('style.load', () => {
